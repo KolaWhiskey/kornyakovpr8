@@ -1,0 +1,50 @@
+﻿<Window x:Class="kornyakovpr8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kornyakovpr8"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Menu VerticalAlignment = "Top" >
+            <MenuItem Header="Файл" >
+                <MenuItem x:Name="Exit" Header="Выход" Click="Exit_Click"/>
+            </MenuItem>
+            <MenuItem Header = "О программе" >
+                <MenuItem x:Name="Info" Header="О программе" Click="Info_Click"/>
+            </MenuItem>
+        </Menu>
+
+
+
+
+        <Grid  Margin="26,65,420,118">
+            <TextBox HorizontalAlignment="Center" Margin="0,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" x:Name="Radiys"/>
+            <TextBox HorizontalAlignment="Left" Margin="17,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True" x:Name="PloshadiCircl"/>
+            <TextBox HorizontalAlignment="Left" Margin="189,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True" x:Name="PerimertCircl"/>
+            <TextBlock HorizontalAlignment="Center" Margin="0,17,0,0" Text="Радиус" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" Margin="52,83,0,0" Text="Площядь" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" Margin="221,83,0,0" Text="Периметр" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <Label Content="Круг" HorizontalAlignment="Left" Margin="0,-14,0,0" VerticalAlignment="Top"/>
+            <Button Content="Расчет" HorizontalAlignment="Left" Margin="17,179,0,0" VerticalAlignment="Top" Width="120" x:Name="RacchetCircl" Click="RacchetCircl_Click"/>
+            <Button Content="Очистка" HorizontalAlignment="Left" Margin="189,179,0,0" VerticalAlignment="Top" Width="120" x:Name="OchistkaCircl" Click="OchistkaCircl_Click"/>
+
+        </Grid>
+        <Grid  Margin="451,65,26,118">
+            <TextBox HorizontalAlignment="Left" Margin="18,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" x:Name="StorA"/>
+            <TextBox HorizontalAlignment="Left" Margin="178,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" x:Name="StorB"/>
+            <TextBox HorizontalAlignment="Left" Margin="18,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" IsReadOnly="True" x:Name="PerimertPrym"/>
+            <TextBlock HorizontalAlignment="Left" Margin="49,25,0,0" Text="Сторона А" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" Margin="207,25,0,0" Text="Сторона Б" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" Margin="49,88,0,0" Text="Периметр" TextWrapping="Wrap" VerticalAlignment="Top" Width="58"/>
+            <Label Content="Прямоугольник" HorizontalAlignment="Left" Margin="0,-14,0,0" VerticalAlignment="Top"/>
+            <TextBox HorizontalAlignment="Left" Margin="178,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" IsReadOnly="True" x:Name="PloshadiPrym"/>
+            <TextBlock HorizontalAlignment="Left" Margin="211,87,0,0" Text="Площядь" TextWrapping="Wrap" VerticalAlignment="Top" Width="51"/>
+            <Button Content="Расчет" HorizontalAlignment="Left" Margin="18,182,0,0" VerticalAlignment="Top" Width="120" x:Name="RacchetPrym" Click="RacchetPrym_Click"/>
+            <Button Content="Очистка" HorizontalAlignment="Left" Margin="175,182,0,0" VerticalAlignment="Top" Width="120" x:Name="OchistkaPrym" Click="OchistkaPrym_Click"/>
+
+        </Grid>
+        <Button Content="Сравнить фигуры" HorizontalAlignment="Center" Margin="0,362,0,0" VerticalAlignment="Top" Width="180" x:Name="Sravnenie0" Click="Sravnenie0_Click"/>
+    </Grid>
+</Window>
